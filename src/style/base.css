@@ -1,12 +1,2 @@
 @import '../vendor/bootstrap/bootstrap.css';
-
-body{
-    text-align: center;
-}
-img{
-    width: 300px;
-}
-h1{
-    font-family: sans-serif;
-    font-size: 50px;
-}
+@import '../vendor/font-awesome/font-awesome.css';
