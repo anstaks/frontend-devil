@@ -16,21 +16,24 @@ var path = {
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/img/',
-        fonts: 'build/fonts/'
+        fonts: 'build/fonts/',
+        video: 'build/video/'
     },
     src: {
         html: 'src/*.html',
         js: 'src/js/main.js',
         style: ['src/style/main.scss', 'src/style/base.css'],
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        fonts: 'src/fonts/**/*.*',
+        video: 'src/video/**/*.*'
     },
     watch: {
         html: 'src/**/*.html',
         js: 'src/**/*.js',
         style: ['src/**/*.css', 'src/**/*.scss'],
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        fonts: 'src/fonts/**/*.*',
+        video: 'src/video/**/*.*'
     },
     clean: './build'
 };
@@ -95,12 +98,18 @@ gulp.task('fonts:build', function() {
         .pipe(gulp.dest(path.build.fonts))
 });
 
+gulp.task('video:build', function() {
+    gulp.src(path.src.video)
+        .pipe(gulp.dest(path.build.video))
+});
+
 gulp.task('build', [
     'html:build',
     'js:build',
     'style:build',
     'fonts:build',
-    'image:build'
+    'image:build',
+    'video:build'
 ]);
 
 
@@ -119,6 +128,9 @@ gulp.task('watch', function(){
     });
     watch(path.watch.fonts, function(event, cb) {
         gulp.start('fonts:build');
+    });
+    watch(path.watch.video, function(event, cb) {
+        gulp.start('video:build');
     });
 });
 

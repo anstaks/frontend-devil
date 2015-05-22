@@ -8,4 +8,6 @@
 * Custom
 */
 
-@import "../blocks/b-header/b-header.scss";
+@import "variables";
+@import "../blocks/b-header/b-header";
+@import "../blocks/b-intro-video/b-intro-video";
