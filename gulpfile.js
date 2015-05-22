@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     prefixer = require('gulp-autoprefixer'),
     sass = require('gulp-sass'),
-    cssimport = require("gulp-cssimport"),
+    concatCss = require('gulp-concat-css'),
     rigger = require('gulp-rigger'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
@@ -21,14 +21,14 @@ var path = {
     src: {
         html: 'src/*.html',
         js: 'src/js/main.js',
-        style: 'src/style/main.scss',
+        style: 'src/style/*.*',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     watch: {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
-        style: 'src/style/**/*.scss',
+        style: 'src/style/*.*',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
@@ -71,10 +71,11 @@ gulp.task('style:build', function () {
     gulp.src(path.src.style)
         .pipe(sass({
             includePaths: ['src/style/'],
-            //outputStyle: 'compressed',
-            sourceMap: true,
+            outputStyle: 'compact',
+            sourceMap: false,
             errLogToConsole: true
         }))
+        .pipe(concatCss("style/src/style/base.css"))
         .pipe(prefixer())
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
