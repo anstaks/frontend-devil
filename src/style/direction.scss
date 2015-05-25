@@ -1,0 +1,49 @@
+@for $i from 1 through 25 {
+  .padding-right-#{$i*2}{
+    padding-right: #{$i*2}px !important;
+  }
+  .rtl .padding-left-#{$i*2} {
+    padding-right: #{$i*2}px !important; padding-left: 0 !important;
+  }
+  .margin-right-#{$i*2} {
+    margin-right: #{$i*2}px !important;
+  }
+  .rtl .margin-left-#{$i*2} {
+    margin-right: #{$i*2}px !important; margin-left: 0 !important;
+  }
+}
+.rtl .mirror {
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+@media #{$sm_max} {
+  .text-xs-left {
+    text-align: left !important;
+  }
+  .text-xs-right {
+    text-align: right !important;
+  }
+  .text-xs-center {
+    text-align: center !important;
+  }
+  .text-xs-justify {
+    text-align: justify !important;
+  }
+}
+
+@media #{$md_max} {
+  .text-sm-left {
+    text-align: left !important;
+  }
+  .text-sm-right {
+    text-align: right !important;
+  }
+  .text-sm-center {
+    text-align: center !important;
+  }
+  .text-sm-justify {
+    text-align: justify !important;
+  }
+}

@@ -1,0 +1,114 @@
+.b-cross-platform {
+  padding: 30px 0 0;
+}
+.b-cross-platform-h2 {
+  margin: 0 0 20px;
+}
+.b-cross-platform-h6 {
+  font-size: 16px; font-weight: bold;
+}
+.b-cross-platform-p {
+  color: #000; font-size: 14px;
+}
+.b-cross-platform-devices {
+  overflow: hidden; padding: 20px 0 30px;
+}
+.b-cross-platform-devices-link {
+  padding: 20px 4% 15px; font-weight: bold; color: #000; text-align: center; border: 1px solid #fff; display: inline-block; transition: background 0.4s linear;
+}
+.b-cross-platform-devices-ico {
+  display: block; height: 96px; margin: 0 auto 5px;
+}
+.b-cross-platform-devices-link-active {
+  border: 1px solid #ccc; border-radius: 5px; background: #f5f5f5; color: #ff9d00;
+}
+.b-cross-platform-devices-link-active .b-cross-platform-devices-ico {
+  background-position: right top;
+}
+.b-cross-platform-devices-link:hover .b-cross-platform-devices-ico {
+  background-position: right top;
+}
+.b-cross-platform-devices-link:hover{
+  color: #ff9d00; text-decoration: none;
+}
+.b-cross-platform-devices-ico-desktop {
+  width: 128px; background: url("../img/icon-desktop.png") left top no-repeat; background-size: auto 100%;
+}
+.b-cross-platform-devices-ico-tablet {
+  width: 141px; background: url("../img/icon-tablet.png") left top no-repeat; background-size: auto 100%;
+}
+.b-cross-platform-devices-ico-phone {
+  width: 56px; background: url("../img/icon-phone.png") left top no-repeat; background-size: auto 100%;
+}
+.b-cross-platform-big {
+  display: block; width: 100%; position: relative;
+}
+.b-cross-platform-big-6 {
+  position: absolute; text-align: center; vertical-align: middle; height: 469px; opacity: 0; left: 0; top: 0; width: 100%;
+}
+.b-cross-platform-target-active {
+  position: static; opacity: 1;
+}
+.b-cross-platform-big-6-img {
+  width: 100%;
+}
+.b-cross-platform-big-6-img-desktop {
+  max-width: 576px;
+}
+.b-cross-platform-big-6-img-tablets {
+  max-width: 337px;
+}
+.b-cross-platform-big-6-img-phone {
+  max-width: 272px;
+}
+.b-cross-platform-change {
+  position: relative;
+}
+.b-cross-platform-change-text {
+  position: absolute; width: 100%; opacity: 0; left: 0; top: 0;
+}
+.b-cross-platform-change-text, .b-cross-platform-big-6 {
+  transition: opacity 0.4s linear;
+}
+
+@media #{$sm_max} {
+  .b-cross-platform-devices-ico {
+    height: 72px;
+  }
+  .b-cross-platform-devices-ico-desktop {
+    width: 96px;
+  }
+  .b-cross-platform-devices-ico-tablet {
+    width: 105px;
+  }
+  .b-cross-platform-devices-ico-phone {
+    width: 42px;
+  }
+  .b-cross-platform-big-6 {
+    height: auto;
+  }
+  .b-cross-platform-big-6-img-desktop {
+    max-width: 450px;
+  }
+  .b-cross-platform-big-6-img {
+    width: auto; max-height: 300px;
+  }
+}
+
+@media #{$xs_max} {
+  .b-cross-platform-devices-ico {
+    height: 48px;
+  }
+  .b-cross-platform-devices-ico-desktop {
+    width: 64px;
+  }
+  .b-cross-platform-devices-ico-tablet {
+    width: 70px;
+  }
+  .b-cross-platform-devices-ico-phone {
+    width: 28px;
+  }
+  .b-cross-platform-big-6-img {
+    max-height: 230px;
+  }
+}

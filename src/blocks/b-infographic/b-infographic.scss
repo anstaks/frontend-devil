@@ -1,0 +1,66 @@
+.b-infographic {
+  padding: 30px 0 30px 0;
+}
+.b-infographic-h2 {
+  margin-bottom: 10px;
+}
+.b-infographic-h4 {
+  color: #333;
+}
+.b-infographic-menu {
+  margin-top: 30px;
+}
+.b-infographic-item {
+  border: solid 5px #fff; border-left: none; border-right: none; box-sizing: border-box; width: 20%; padding: 10px 0; text-align: center; color: #000; transition: all 0.8s ease-out; margin-bottom: 10px;
+}
+.b-infographic-item:hover {
+  text-decoration: none; border-color: #999; color: #000;
+}
+.b-infographic-item-active, .b-infographic-item-active:hover{
+  border-color: #f17d1f;
+}
+.b-infographic-item-active .b-infographic-item-digit {
+  color: #f17d1f;
+}
+.b-infographic-item-digit {
+  display: block; font-size: 40px; line-height: 40px; font-weight: 600; text-align: center; padding-bottom: 1px; color: #999; padding-bottom: 0; transition: all 0.8s ease-out;
+}
+.b-infographic-big {
+  position: relative;
+}
+.b-infographic-big-contain {
+  opacity: 0; transition: opacity 0.8s linear; position: absolute; top: 0; text-align: center; width: 100%;
+}
+.b-infographic-big-contain.b-infographic-big-contain-active {
+  opacity: 1; position: relative;
+}
+.b-infographic-big-image {
+  max-width: 100%;
+}
+
+@media #{$md_max} {
+  .b-infographic-item-digit {
+    font-size: 32px; line-height: 32px;
+  }
+}
+
+@media #{$sm_max} {
+  .b-infographic-item {
+    width: 33.33%;
+  }
+  .b-infographic-item-last2 {
+    width: 50%;
+  }
+  .b-infographic-item-digit {
+    font-size: 40px; line-height: 40px;
+  }
+}
+
+@media #{$xs_max} {
+  .b-infographic-h4 {
+    height: 54px; padding: 0 10px;
+  }
+  .b-infographic-item-digit {
+    font-size: 30px; line-height: 30px;
+  }
+}
