@@ -1,0 +1,280 @@
+.b-social-icons {
+  margin: 0; padding: 10px 0 0; width: auto;
+}
+
+.b-social-li {
+  transition: all 0.3s ease; background-image: url(../img/social-sprites.png); background-repeat: no-repeat; background-position: 0 100px; display: inline-block; margin: -1px 1px 5px 0; padding: 0; border-radius: 100%; overflow: visible; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.b-social-link {
+  display: block; height: 30px; width: 30px; text-align: center;
+  text-indent: -9999px;
+}
+
+.b-social-link:hover {
+  text-decoration: none;
+}
+
+.b-social-link:active {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3), inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.b-social-li:active, .b-social-link:active {
+  border-radius: 100%;
+}
+
+.b-social-digg {
+  background-position: 0 0;
+}
+
+.b-social-digg:hover {
+  background-position: 0 -30px;
+}
+
+.b-social-dribbble {
+  background-position: 0 -60px;
+}
+
+.b-social-dribbble:hover {
+  background-position: 0 -90px;
+}
+
+.b-social-facebook {
+  background-position: 0 -120px;
+}
+
+.b-social-facebook:hover {
+  background-position: 0 -150px;
+}
+
+.b-social-flickr {
+  background-position: 0 -180px;
+}
+
+.b-social-flickr:hover {
+  background-position: 0 -210px;
+}
+
+.b-social-forrst {
+  background-position: 0 -240px;
+}
+
+.b-social-forrst:hover {
+  background-position: 0 -270px;
+}
+
+.b-social-googleplus {
+  background-position: 0 -300px;
+}
+
+.b-social-googleplus:hover {
+  background-position: 0 -330px;
+}
+
+.b-social-html5 {
+  background-position: 0 -360px;
+}
+
+.b-social-html5:hover {
+  background-position: 0 -390px;
+}
+
+.b-social-icloud {
+  background-position: 0 -420px;
+}
+
+.b-social-icloud:hover {
+  background-position: 0 -450px;
+}
+
+.b-social-lastfm {
+  background-position: 0 -480px;
+}
+
+.b-social-lastfm:hover {
+  background-position: 0 -510px;
+}
+
+.b-social-linkedin {
+  background-position: 0 -540px;
+}
+
+.b-social-linkedin:hover {
+  background-position: 0 -570px;
+}
+
+.b-social-myspace {
+  background-position: 0 -600px;
+}
+
+.b-social-myspace:hover {
+  background-position: 0 -630px;
+}
+
+.b-social-paypal {
+  background-position: 0 -660px;
+}
+
+.b-social-paypal:hover {
+  background-position: 0 -690px;
+}
+
+.b-social-picasa {
+  background-position: 0 -720px;
+}
+
+.b-social-picasa:hover {
+  background-position: 0 -750px;
+}
+
+.b-social-pinterest {
+  background-position: 0 -780px;
+}
+
+.b-social-pinterest:hover {
+  background-position: 0 -810px;
+}
+
+.b-social-reddit {
+  background-position: 0 -840px;
+}
+
+.b-social-reddit:hover {
+  background-position: 0 -870px;
+}
+
+.b-social-rss {
+  background-position: 0 -900px;
+}
+
+.b-social-rss:hover {
+  background-position: 0 -930px;
+}
+
+.b-social-skype {
+  background-position: 0 -960px;
+}
+
+.b-social-skype:hover {
+  background-position: 0 -990px;
+}
+
+.b-social-stumbleupon {
+  background-position: 0 -1020px;
+}
+
+.b-social-stumbleupon:hover {
+  background-position: 0 -1050px;
+}
+
+.b-social-tumblr {
+  background-position: 0 -1080px;
+}
+
+.b-social-tumblr:hover {
+  background-position: 0 -1110px;
+}
+
+.b-social-twitter {
+  background-position: 0 -1140px;
+}
+
+.b-social-twitter:hover {
+  background-position: 0 -1170px;
+}
+
+.b-social-vimeo {
+  background-position: 0 -1200px;
+}
+
+.b-social-vimeo:hover {
+  background-position: 0 -1230px;
+}
+
+.b-social-wordpress {
+  background-position: 0 -1260px;
+}
+
+.b-social-wordpress:hover {
+  background-position: 0 -1290px;
+}
+
+.b-social-yahoo {
+  background-position: 0 -1320px;
+}
+
+.b-social-yahoo:hover {
+  background-position: 0 -1350px;
+}
+
+.b-social-youtube {
+  background-position: 0 -1380px;
+}
+
+.b-social-youtube:hover {
+  background-position: 0 -1410px;
+}
+
+.b-social-github {
+  background-position: 0 -1440px;
+}
+
+.b-social-github:hover {
+  background-position: 0 -1470px;
+}
+
+.b-social-behance {
+  background-position: 0 -1500px;
+}
+
+.b-social-behance:hover {
+  background-position: 0 -1530px;
+}
+
+.b-social-yelp {
+  background-position: 0 -1560px;
+}
+
+.b-social-yelp:hover {
+  background-position: 0 -1590px;
+}
+
+.b-social-mail {
+  background-position: 0 -1620px;
+}
+
+.b-social-mail:hover {
+  background-position: 0 -1650px;
+}
+
+.b-social-instagram {
+  background-position: 0 -1680px;
+}
+
+.b-social-instagram:hover {
+  background-position: 0 -1710px;
+}
+
+.b-social-foursquare {
+  background-position: 0 -1740px;
+}
+
+.b-social-foursquare:hover {
+  background-position: 0 -1770px;
+}
+
+.b-social-zerply {
+  background-position: 0 -1800px;
+}
+
+.b-social-zerply:hover {
+  background-position: 0 -1830px;
+}
+
+.b-social-vk {
+  background-position: 0 -1860px;
+}
+
+.b-social-vk:hover {
+  background-position: 0 -1890px;
+}
