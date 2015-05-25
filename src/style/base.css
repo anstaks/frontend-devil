@@ -1,2 +1,4 @@
 @import '../vendor/bootstrap/bootstrap.css';
 @import '../vendor/font-awesome/font-awesome.css';
+
+a:focus {text-decoration: inherit; color: inherit;}

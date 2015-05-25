@@ -1,0 +1,21 @@
+.b-favorite-payment {
+  padding: 40px 0 40px;
+}
+.b-favorite-payment-h2 {
+  margin: 0; line-height: 40px; font-weight: 400; padding-bottom: 5px;
+}
+.b-favorite-payment-center {
+  padding: 10px 0 20px; text-align: center;
+}
+.b-favorite-payment-center-item {
+  display: inline-block;
+}
+.b-favorite-payment-h6 {
+  font-size: 18px;
+}
+
+@media #{$xs_max} {
+  .b-favorite-payment-center-item-img {
+    width: 90px;
+  }
+}

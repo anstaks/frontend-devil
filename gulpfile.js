@@ -76,9 +76,9 @@ gulp.task('js:build', function () {
 gulp.task('style:build', function () {
     gulp.src(path.src.style)
         .pipe(sass({
-            includePaths: ['src/style/'],
-            //outputStyle: 'compressed',
-            sourceMap: true,
+            includePaths: ['src/style/', 'src/blocks'],
+            outputStyle: 'expanded',
+            //sourceMap: true,
             errLogToConsole: true
         }))
         .pipe(prefixer())
