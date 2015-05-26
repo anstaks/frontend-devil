@@ -2,19 +2,19 @@
   padding: 30px 0 0;
 }
 .b-cross-platform-h2 {
-  margin: 0 0 20px;
+  margin: 0 0 20px; color: #ff9d00;
 }
 .b-cross-platform-h6 {
-  font-size: 16px; font-weight: bold;
+  font-size: 16px; font-weight: bold; margin-top: 0;
 }
 .b-cross-platform-p {
-  color: #000; font-size: 14px;
+  font-size: 14px;
 }
 .b-cross-platform-devices {
   overflow: hidden; padding: 20px 0 30px;
 }
 .b-cross-platform-devices-link {
-  padding: 20px 4% 15px; font-weight: bold; color: #000; text-align: center; border: 1px solid #fff; display: inline-block; transition: background 0.4s linear;
+  padding: 20px 4% 15px; font-weight: bold; color: #333; text-align: center; border: 1px solid #fff; display: inline-block; transition: background 0.4s linear; font-weight: 600;
 }
 .b-cross-platform-devices-ico {
   display: block; height: 96px; margin: 0 auto 5px;
@@ -46,9 +46,6 @@
 .b-cross-platform-big-6 {
   position: absolute; text-align: center; vertical-align: middle; height: 469px; opacity: 0; left: 0; top: 0; width: 100%;
 }
-.b-cross-platform-target-active {
-  position: static; opacity: 1;
-}
 .b-cross-platform-big-6-img {
   width: 100%;
 }
@@ -70,7 +67,9 @@
 .b-cross-platform-change-text, .b-cross-platform-big-6 {
   transition: opacity 0.4s linear;
 }
-
+.b-cross-platform-target-active {
+  position: relative; opacity: 1;
+}
 @media #{$sm_max} {
   .b-cross-platform-devices-ico {
     height: 72px;

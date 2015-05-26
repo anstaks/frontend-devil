@@ -1,5 +1,6 @@
 @import "../vendor/bootstrap/bootstrap.css";
 @import "../vendor/font-awesome/font-awesome.css";
+@import "flags.css";
 
 a {
   cursor: pointer;
@@ -10,3 +11,4 @@ a:focus {
 hr {
   background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2), transparent); border: 0; height: 1px; margin: 22px 0 22px 0;
 }
+h2 {font-weight: 300;}

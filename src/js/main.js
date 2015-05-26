@@ -14,4 +14,5 @@ $(function () {
 //= ../blocks/b-intro-video/b-intro-video.js
 //= ../blocks/b-infographic/b-infographic.js
 //= ../blocks/b-cross-platform/b-cross-platform.js
+//= ../blocks/b-header/b-header.js
 

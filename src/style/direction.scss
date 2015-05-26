@@ -1,12 +1,27 @@
+.abs-right-0 {right: 0 !important;}
+.rtl .abs-right-0.flip {left: 0 !important; right: auto !important;}
+
 @for $i from 1 through 50 {
   .padding-right-#{$i}{
     padding-right: #{$i}px !important;
+  }
+  .rtl .padding-right-#{$i} {
+    padding-left: #{$i}px !important; padding-right: 0 !important;
+  }
+  .padding-left-#{$i}{
+    padding-left: #{$i}px !important;
   }
   .rtl .padding-left-#{$i} {
     padding-right: #{$i}px !important; padding-left: 0 !important;
   }
   .margin-right-#{$i} {
     margin-right: #{$i}px !important;
+  }
+  .rtl .margin-right-#{$i} {
+    margin-left: #{$i}px !important; margin-right: 0 !important;
+  }
+  .margin-left-#{$i} {
+    margin-left: #{$i}px !important;
   }
   .rtl .margin-left-#{$i} {
     margin-right: #{$i}px !important; margin-left: 0 !important;

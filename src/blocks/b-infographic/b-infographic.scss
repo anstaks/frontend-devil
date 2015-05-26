@@ -11,10 +11,10 @@
   margin-top: 30px;
 }
 .b-infographic-item {
-  border: solid 5px #fff; border-left: none; border-right: none; box-sizing: border-box; width: 20%; padding: 10px 0; text-align: center; color: #000; transition: all 0.8s ease-out; margin-bottom: 10px;
+  border: solid 5px #fff; border-left: none; border-right: none; box-sizing: border-box; width: 20%; padding: 10px 0; text-align: center; color: #333; transition: all 0.8s ease-out; margin-bottom: 10px;
 }
 .b-infographic-item:hover {
-  text-decoration: none; border-color: #999; color: #000;
+  text-decoration: none; border-color: #999; color: #333;
 }
 .b-infographic-item-active, .b-infographic-item-active:hover{
   border-color: #f17d1f;

@@ -1,32 +1,84 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Project name</a>
+<header class="b-header">
+  <div class="container b-header__container">
+    <a href="index.html" class="b-header__logo pull-left flip">
+      <img alt="OkPay" class="b-header__logo-img" src="img/logo-pixelperfect.png">
+    </a>
+    <div class="pull-right flip margin-left-20 b-header-top-padding-for-text">
+      //= ../b-language/b-language.html
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Nav header</li>
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
+    <button type="button" class="b-header__button-toggle navbar-toggle collapsed margin-left-20 b-header-top-padding-for-text" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <div class="search b-header-search pull-right flip padding-left-15">
+      <form id="searchForm" action="page-search-results.html" method="get">
+        <div class="input-group">
+          <input type="text" class="form-control b-header-search-input search" name="q" id="q" placeholder="Search..." required>
+          <span class="input-group-btn">
+            <button class="btn btn-default abs-right-0 flip b-header-search-btn" type="submit"><i class="fa fa-search"></i></button>
+          </span>
+        </div>
+      </form>
+    </div>    
+
+    <div class="b-header-welcome-aboard pull-right flip hidden-xs b-header-top-padding-for-text">
+      Welcome aboard! Please <a href="#">Log In</a> or <a href="#">Sign Up</a> for a free account.
+    </div>
+  </div>
+  <div id="navbar" class="navbar-collapse collapse b-header__navbar-collapse">
+    <div class="b-header-mobile-auth hidden-lg hidden-md">
+      <div class="b-header-mobile-container container">
+        <ul class="nav navbar-nav navbar-right b-header-navbar-level1">
+          <li class="b-header-mobile-auth-title">
+            Welcome back, Anton Borzenko
+          </li>
+          <li class="b-header-level1">
+            <a href="#" class="b-header-level1-link">Cabinet</a>
+          </li>
+          <li class="b-header-level1">
+            <a href="#" class="b-header-level1-link">Sign Out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="b-header-mobile-container container">
+      <ul class="nav navbar-nav b-header-navbar-level1 flip">
+        <li class="b-header-level1 b-header-level1-active">
+          <a href="#" class="b-header-level1-link">Home</a>
+        </li>
+        <li class="dropdown b-header-level1 b-header-level1-with-megamenu">
+          <a href="#" class="dropdown-toggle b-header-level1-link" data-toggle="dropdown" role="button" aria-expanded="false">Services <i class="fa fa-angle-down"></i></a>
+          <div class="dropdown-menu b-header-mega-submenu">
+            <div class="container b-header-mega-submenu-container">
+              <ul class="b-header-navbar-level2 col-md-3">
+                <li class="b-header-level2"><a class="b-header-level2-link" href="#">Accepting Payments</a></li>
+                <li class="b-header-level2"><a class="b-header-level2-link" href="#">Digital Wallet</a></li>
+              </ul>
+              <ul class="b-header-navbar-level2 col-md-3">
+                <li class="b-header-level2"><a class="b-header-level2-link" href="#">Online Banking</a></li>
+                <li class="b-header-level2"><a class="b-header-level2-link" href="#">OKPAY Card</a></li>
+              </ul>
+              <ul class="b-header-navbar-level2 col-md-3">
+                <li class="b-header-level2"><a class="b-header-level2-link" href="#">Money Transfers</a></li>
+                <li class="b-header-level2"><a class="b-header-level2-link" href="#">Mass Payments</a></li>
+              </ul>
+              <ul class="b-header-navbar-level2 col-md-3">
+                <li class="b-header-level2"><a class="b-header-level2-link" href="#">Service Fees</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </li>
+        <li class="b-header-level1">
+          <a href="#" class="b-header-level1-link">Support</a>
+        </li>
+        <li class="b-header-level1">
+          <a href="#" class="b-header-level1-link">Developers</a>
+        </li>
+        <li class="b-header-level1">
+          <a href="#" class="b-header-level1-link">My Account</a>
         </li>
       </ul>
     </div>
   </div>
-</nav>
+</header>

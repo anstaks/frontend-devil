@@ -22,7 +22,7 @@ var path = {
     src: {
         html: 'src/*.html',
         js: 'src/js/main.js',
-        style: ['src/style/main.scss', 'src/style/base.css'],
+        style: ['src/style/bootstrap-rtl.css', 'src/style/base.css', 'src/style/main.scss'],
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
         video: 'src/video/**/*.*'
@@ -46,10 +46,6 @@ var config = {
     host: 'localhost',
     port: 9000,
     logPrefix: "Frontend_Devil"
-};
-
-var css_options = {
-  extensions: ["css"] // process only css
 };
 
 gulp.task('webserver', function () {
@@ -82,7 +78,9 @@ gulp.task('style:build', function () {
             errLogToConsole: true
         }))
         .pipe(prefixer())
-        .pipe(cssimport(css_options))
+        .pipe(cssimport({
+          extensions: ["css"]
+        }))
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });

@@ -1,0 +1,9 @@
+.language-switcher {padding: 0;}
+.language-switcher-current {cursor: pointer;}
+.language-switcher-menu {min-width:30px;}
+.language-switcher .dropdown-menu {left: -20px;}
+@media #{$md_max} {
+  .language-switcher {padding:1px 0 0 0;}
+  .language-switcher-textclass {display: none;}
+.language-switcher .dropdown-menu {left: -40px;}
+}
