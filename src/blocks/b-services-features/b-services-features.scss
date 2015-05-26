@@ -5,10 +5,10 @@
   margin: 0 0 15px;
 }
 .b-services-features-box {
-  border-bottom: 5px solid #f17d1f; margin: 0 0 16px; display: block; background: #fff; border-radius: 8px; color: #000;
+  border-bottom: 5px solid #f17d1f; margin: 0 0 16px; display: block; background: #fff; border-radius: 8px; color: #000; transition: background 0.2s linear;
 }
 .b-services-features-box:hover {
-  text-decoration: none; color: inherit;
+  text-decoration: none; color: inherit; background: #f1f1f1;
 }
 .b-services-features-box-content {
   border-top: 1px solid #ececec; display: table; width: 100%; padding: 20px 30px 0;
